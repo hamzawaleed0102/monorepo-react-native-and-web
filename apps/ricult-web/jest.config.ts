@@ -8,4 +8,7 @@ export default {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../coverage/apps/ricult-web',
+  moduleNameMapper: {
+    '^react-native$': 'react-native-web',
+  },
 };
