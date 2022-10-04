@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ricult/models": ["libs/models/src/index.ts"],
+      "@ricult/store": ["libs/store/src/index.ts"],
+      "@ricult/ui": ["libs/ui/src/index.ts"],
+      "@ricult/services": ["libs/services/src/index.ts"]
+    }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": ["node_modules", "tmp"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

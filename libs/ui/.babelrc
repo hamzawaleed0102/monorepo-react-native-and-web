@@ -1,0 +1,7 @@
+{
+  "presets": [
+    ["@nrwl/web/babel", { "useBuiltIns": "usage" }],
+    ["@nrwl/react/babel"]
+  ],
+  "plugins": [["react-native-web", { "commonjs": true }]]
+}
