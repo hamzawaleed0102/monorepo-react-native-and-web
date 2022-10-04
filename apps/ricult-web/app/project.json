@@ -1,7 +1,7 @@
 {
   "name": "ricult-web",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/ricult-web/src",
+  "sourceRoot": "apps/ricult-web/app/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -11,18 +11,18 @@
       "options": {
         "compiler": "babel",
         "outputPath": "dist/apps/ricult-web",
-        "index": "apps/ricult-web/src/index.html",
+        "index": "apps/ricult-web/app/src/index.html",
         "baseHref": "/",
-        "main": "apps/ricult-web/src/main.tsx",
-        "polyfills": "apps/ricult-web/src/polyfills.ts",
-        "tsConfig": "apps/ricult-web/tsconfig.app.json",
+        "main": "apps/ricult-web/app/src/main.tsx",
+        "polyfills": "apps/ricult-web/app/src/polyfills.ts",
+        "tsConfig": "apps/ricult-web/app/tsconfig.app.json",
         "assets": [
-          "apps/ricult-web/src/favicon.ico",
-          "apps/ricult-web/src/assets"
+          "apps/ricult-web/app/src/favicon.ico",
+          "apps/ricult-web/app/src/assets"
         ],
         "styles": [],
         "scripts": [],
-        "webpackConfig": "apps/ricult-web/webpack.js"
+        "webpackConfig": "apps/ricult-web/app/webpack.js"
       },
       "configurations": {
         "development": {
@@ -34,8 +34,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "apps/ricult-web/src/environments/environment.ts",
-              "with": "apps/ricult-web/src/environments/environment.prod.ts"
+              "replace": "apps/ricult-web/app/src/environments/environment.ts",
+              "with": "apps/ricult-web/app/src/environments/environment.prod.ts"
             }
           ],
           "optimization": true,
@@ -68,14 +68,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/ricult-web/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/ricult-web/app/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/ricult-web"],
       "options": {
-        "jestConfig": "apps/ricult-web/jest.config.ts",
+        "jestConfig": "apps/ricult-web/app/jest.config.ts",
         "passWithNoTests": true
       }
     }
