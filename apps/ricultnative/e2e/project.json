@@ -1,7 +1,7 @@
 {
   "name": "ricultnative-e2e",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/ricultnative/ricultnative-e2e/src",
+  "sourceRoot": "apps/ricultnative/e2e/src",
   "projectType": "application",
   "targets": {
     "build-ios": {
@@ -56,9 +56,7 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "apps/ricultnative/ricultnative-e2e/**/*.{ts,tsx,js,jsx}"
-        ]
+        "lintFilePatterns": ["apps/ricultnative/e2e/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },

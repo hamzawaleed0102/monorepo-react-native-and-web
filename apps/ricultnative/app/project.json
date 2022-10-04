@@ -1,7 +1,7 @@
 {
   "name": "ricultnative",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/ricultnative/src",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/ricultnative/app/src",
   "projectType": "application",
   "targets": {
     "start": {
@@ -22,11 +22,11 @@
     },
     "bundle-ios": {
       "executor": "@nrwl/react-native:bundle",
-      "outputs": ["apps/ricultnative/build"],
+      "outputs": ["apps/ricultnative/app/build"],
       "options": {
         "entryFile": "src/main.tsx",
         "platform": "ios",
-        "bundleOutput": "dist/apps/ricultnative/ios/main.jsbundle"
+        "bundleOutput": "dist/apps/ricultnative/app/ios/main.jsbundle"
       }
     },
     "run-android": {
@@ -36,8 +36,8 @@
     "build-android": {
       "executor": "@nrwl/react-native:build-android",
       "outputs": [
-        "apps/ricultnative/android/app/build/outputs/bundle",
-        "apps/ricultnative/android/app/build/outputs/apk"
+        "apps/ricultnative/app/android/app/build/outputs/bundle",
+        "apps/ricultnative/app/android/app/build/outputs/apk"
       ],
       "options": {}
     },
@@ -46,7 +46,7 @@
       "options": {
         "entryFile": "src/main.tsx",
         "platform": "android",
-        "bundleOutput": "dist/apps/ricultnative/android/main.jsbundle"
+        "bundleOutput": "dist/apps/ricultnative/app/android/main.jsbundle"
       }
     },
     "sync-deps": {
@@ -61,14 +61,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/ricultnative/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/ricultnative/app/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/ricultnative"],
+      "outputs": ["coverage/apps/ricultnative/app"],
       "options": {
-        "jestConfig": "apps/ricultnative/jest.config.ts",
+        "jestConfig": "apps/ricultnative/app/jest.config.ts",
         "passWithNoTests": true
       }
     }

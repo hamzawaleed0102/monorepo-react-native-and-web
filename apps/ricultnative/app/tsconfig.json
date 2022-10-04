@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "../../../tsconfig.base.json",
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "jsx": "react-native",
@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "resolveJsonModule": true
   },
-  "files": ["../../node_modules/@nrwl/react-native/typings/svg.d.ts"],
+  "files": ["../../../node_modules/@nrwl/react-native/typings/svg.d.ts"],
   "include": [],
   "references": [
     {
