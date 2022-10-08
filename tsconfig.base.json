@@ -15,10 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ricult/assets": ["libs/assets/src/index.ts"],
+      "@ricult/i18n": ["libs/i18n/src/index.ts"],
       "@ricult/models": ["libs/models/src/index.ts"],
+      "@ricult/services": ["libs/services/src/index.ts"],
       "@ricult/store": ["libs/store/src/index.ts"],
-      "@ricult/ui": ["libs/ui/src/index.ts"],
-      "@ricult/services": ["libs/services/src/index.ts"]
+      "@ricult/theme": ["libs/theme/src/index.ts"],
+      "@ricult/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"],

@@ -7,17 +7,19 @@ import {
 } from 'react-native';
 import { MotiView } from 'moti';
 import { HoroscopeCardProps } from './horoscope-card.props';
+import { useTranslation } from 'react-i18next';
 
 export function HoroscopeCard({
   zodiacItem,
   horoscope,
   loadingStatus,
 }: HoroscopeCardProps) {
+  const { t } = useTranslation();
   return (
     <SafeAreaView>
       <View>
         <Text style={{ fontSize: 30 }}>
-          {typeof zodiacItem === 'string' ? zodiacItem : ''}
+          {typeof zodiacItem === 'string' ? t(zodiacItem) : ''}
         </Text>
         <Text>Your Horoscope for Today</Text>
         {loadingStatus === 'loaded' && horoscope ? (

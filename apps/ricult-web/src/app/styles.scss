@@ -1,0 +1,9 @@
+$color-primary: #387ef5;
+$color-secondary: #32db64;
+$color-danger: #f53d3d;
+
+:export {
+  colorPrimary: $color-primary;
+  colorSecondary: $color-secondary;
+  colorDanger: $color-danger;
+}

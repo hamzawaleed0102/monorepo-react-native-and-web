@@ -1,0 +1,84 @@
+{
+  "name": "ricult-web",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/ricult-web/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/ricult-web",
+        "index": "apps/ricult-web/src/index.html",
+        "baseHref": "/",
+        "main": "apps/ricult-web/src/main.tsx",
+        "polyfills": "apps/ricult-web/src/polyfills.ts",
+        "tsConfig": "apps/ricult-web/tsconfig.app.json",
+        "assets": [
+          "apps/ricult-web/src/favicon.ico",
+          "apps/ricult-web/src/assets"
+        ],
+        "styles": ["apps/ricult-web/src/app/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "apps/ricult-web/webpack.js"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/ricult-web/src/environments/environment.ts",
+              "with": "apps/ricult-web/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/webpack:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "ricult-web:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "ricult-web:build:development"
+        },
+        "production": {
+          "buildTarget": "ricult-web:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/ricult-web/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/ricult-web"],
+      "options": {
+        "jestConfig": "apps/ricult-web/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

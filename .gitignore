@@ -102,3 +102,4 @@ buck-out/
 
 
 apps/ricultnative-e2e/artifacts
+apps/test-e2e/artifacts

@@ -1,6 +1,7 @@
 import { AppRoutes } from './app-routes.enum';
 
 export type RootStackParamList = {
+  [AppRoutes.splash]: undefined;
   [AppRoutes.list]: undefined;
   [AppRoutes.card]: { card: string };
 };
