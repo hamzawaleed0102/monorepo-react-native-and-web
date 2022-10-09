@@ -393,7 +393,7 @@ PODS:
     - React-RCTText
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNScreens (3.17.0):
+  - RNScreens (3.18.0):
     - React-Core
     - React-RCTImage
   - RNSVG (13.3.0):
@@ -574,7 +574,7 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
   FBLazyVector: d3cdc05875c89782840d2f38e1d6174fab24e4d2
-  FBReactNativeSpec: 24d20df16b64f7a5754a3567b2936de4a91767a1
+  FBReactNativeSpec: c2d0f5010b1a8d9eb60ac86654e2718d234f60e5
   Flipper: 26fc4b7382499f1281eb8cb921e5c3ad6de91fe0
   Flipper-Boost-iOSX: fd1e2b8cbef7e662a122412d7ac5f5bea715403c
   Flipper-DoubleConversion: 2dc99b02f658daf147069aad9dbd29d8feb06d30
@@ -620,7 +620,7 @@ SPEC CHECKSUMS:
   RNCAsyncStorage: 0c357f3156fcb16c8589ede67cc036330b6698ca
   RNGestureHandler: 7673697e7c0e9391adefae4faa087442bc04af33
   RNReanimated: 60e291d42c77752a0f6d6f358387bdf225a87c6e
-  RNScreens: 0df01424e9e0ed7827200d6ed1087ddd06c493f9
+  RNScreens: f3230dd008a7d0ce5c0a8bc78ff12cf2315bda24
   RNSVG: 1869ad9534459f24caaa0416a4764548c2aeedad
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   Yoga: 6c8252e38d65aa387daee699eacf027e055e0b31

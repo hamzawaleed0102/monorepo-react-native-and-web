@@ -25,6 +25,8 @@
     "i18next": "*",
     "@testing-library/react": "*",
     "react-router-dom": "*",
-    "react-native-web": "*"
+    "react-native-web": "*",
+    "@storybook/react-native": "*",
+    "@react-native-masked-view/masked-view": "*"
   }
 }

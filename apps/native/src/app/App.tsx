@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 import { Provider } from 'react-redux';
-import HomeScreen from './screens/HomeScreen';
+import HomeScreen from './screens/home/home-screen';
 import DetailsScreen from './screens/DetailsScreen';
 import SplashScreen from './screens/SplashScreen';
 import { I18nextProvider } from 'react-i18next';
