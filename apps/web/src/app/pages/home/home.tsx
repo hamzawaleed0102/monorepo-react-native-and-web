@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styles from './home.module.scss';
 import { ZodiacSignList } from '@ricult/ui';
 import { AdhZodiacSignItem } from '@ricult/models';
@@ -14,11 +15,9 @@ const HomePage = () => {
 
   return (
     <HomeContainer className={styles.homeContainer}>
-      <img src={GlobeIcon} />
-      {/* <GlobeIconWeb /> */}
+      <GlobeIcon width={40} style={{ color: 'blue' }} />
       <ZodiacSignList onPressListItem={onPressListItem} />
       <ZodiacSignList onPressListItem={onPressListItem} />
-      <button>asdf</button>
     </HomeContainer>
   );
 };

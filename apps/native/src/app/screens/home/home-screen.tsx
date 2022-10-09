@@ -3,7 +3,7 @@ import React from 'react';
 import { ToggleLang, ZodiacSignList } from '@ricult/ui';
 import { useNavigation } from '@react-navigation/native';
 import { AdhZodiacSignItem, AppRoutes } from '@ricult/models';
-// import { GlobeIcon } from '@ricult/assets';
+import { GlobeIcon } from '@ricult/assets';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -14,7 +14,7 @@ const HomeScreen = () => {
 
   return (
     <View>
-      {/* <GlobeIcon style={{ width: 40, height: 40 }} /> */}
+      <GlobeIcon style={{ width: 40, height: 40 }} />
       <ToggleLang />
       <Text>HomeScreen</Text>
       <ZodiacSignList onPressListItem={onPressListItem} />
