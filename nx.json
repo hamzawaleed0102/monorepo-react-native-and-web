@@ -38,7 +38,7 @@
     ],
     "sharedGlobals": ["{workspaceRoot}/babel.config.json"]
   },
-  "defaultProject": "ricultnative",
+  "defaultProject": "native",
   "generators": {
     "@nrwl/react": {
       "application": {

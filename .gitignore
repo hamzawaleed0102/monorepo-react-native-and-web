@@ -101,5 +101,5 @@ buck-out/
 **/vendor/bundle/
 
 
-apps/ricultnative-e2e/artifacts
+apps/native-e2e/artifacts
 apps/test-e2e/artifacts
